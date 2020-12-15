@@ -65,31 +65,6 @@
     #tech tr {
       background-color: #f0efef38;
     }
-    @media (min-width: 768px) {
-      #roles {
-        width: 80%;
-      }
-      figure img {
-        height: 100px;
-      }
-    }
-    @media (max-width: 768px) {
-      table {
-        display: block;
-        width: 100%;
-      }
-    }
-    @media (max-width: 576px) {
-      #roles td,
-      #contact td {
-        display: block;
-      }
-    }
-    @media (max-width: 425px) {
-      .mobH1 {
-        font-size: 1.2rem;
-      }
-    }
     footer td {
       vertical-align: top;
     }
@@ -111,6 +86,37 @@
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
+    }
+    @media (min-width: 768px) {
+      #roles {
+        width: 80%;
+      }
+      figure img {
+        height: 100px;
+      }
+    }
+    @media (max-width: 768px) {
+      table {
+        display: block;
+        width: 100%;
+      }
+    }
+    @media (max-width: 576px) {
+      #roles td,
+      #contact td {
+        display: block;
+      }
+      .cc {
+        flex-direction: column;
+      }
+      .cc h3 {
+        align-self: center;
+      }
+    }
+    @media (max-width: 425px) {
+      .mobH1 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
