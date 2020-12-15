@@ -1,220 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Balachandiran's Profile Website | Web Developer</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- internal CSS -->
   <style>
-    nav {
-      text-align: center;
-      height: 50px;
-      padding: 1rem 0 0;
-
+    * {
+      box-sizing: border-box;
     }
-
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    nav {
+      height: 50px;
+      padding: 1rem 0;
+    }
     nav a {
       text-decoration: none;
       font-size: 18px;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    td {
+      padding: 10px;
+    }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    .myphoto {
+      border-radius: 50%;
+    }
+    .table {
+      overflow-x: auto;
+    }
+    .linone {
+      visibility: hidden;
+    }
+    #portfolio a {
+      display: inline-block;
+      position: relative;
+      background-color: #f0efef38;
+      margin-right: 20px;
+      transition: all 0.5s ease;
+    }
+    #portfolio a {
+      text-decoration: none;
+    }
+    #portfolio a:hover {
+      box-shadow: 2px 2px 10px 2px #f0efef;
+    }
+    #tech {
+      box-shadow: 2px 2px 10px 2px #f0efef;
+    }
+    #tech tr {
+      background-color: #f0efef38;
+    }
+    @media (min-width: 768px) {
+      #roles {
+        width: 80%;
+      }
+      figure img {
+        height: 100px;
+      }
+    }
+    @media (max-width: 768px) {
+      table {
+        display: block;
+        width: 100%;
+      }
+    }
+    @media (max-width: 576px) {
+      #roles td,
+      #contact td {
+        display: block;
+      }
+    }
+    @media (max-width: 425px) {
+      .mobH1 {
+        font-size: 1.2rem;
+      }
+    }
+    footer td {
+      vertical-align: top;
+    }
+    address,
+    li {
+      line-height: 1.5;
+    }
+    address span {
+      font-style: normal;
+    }
+    .social a {
+      margin-right: .5rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+    }
+    .cc {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
   </style>
 </head>
-
 <body>
   <nav>
-    <a href="#about">About me</a> |
-    <a href="#skills">Skills</a> |
+    <a href="#roles">ROLES</a> |
+    <a href="#experience">EXPERIENCE</a> |
+    <a href="#skills">SKILLS</a> |
+    <a href="#portfolio">PORTFOLIO</a> |
+    <a href="#contact">CONTACT</a> |
   </nav>
-  <section class="d-flex">
-    <div>
-      <img src="images/Balachandiran-photo.png" height="200px" alt="personal-website-pic-Balachandiran">
-    </div>
-    <div>
-      <h1>Balachandiran.B.S</h1>
-      <p><em>Founder and Business Analyst @ <a href="https://www.tensketch.com/"><strong>TenSketch.</strong></a></em>
-      </p>
-      <p>I sketch websites with minimalism and meaning.</p>
-    </div>
-
-  </section>
-
-  <section id="skills">
-    <h1>My Skills</h1>
-    <div id="web-design" class="d-flex align-items-center">
-      <cite title="TenSketch's Website design service page">
-        <a href="https://www.tensketch.com/web-solutions/website-designing-and-development/">
-          <h3>Front-end developer</h3>
-        </a>
-      </cite>
-      <img src="/images/front-end_developer.jpg" alt="">
-     
-    </div>
-   
-
-    <div id="business-analyst" class="d-flex align-items-center">
-      <cite title="Business Analysis and consulting page of TenSketch">
-        <a href="https://www.tensketch.com/consulting/for-content-and-business/">
-          <h3>Business analysis and consulting</h3>
-        </a>
-      </cite>
-      <div>
-        <ol>
-          <li>Requirement gathering</li>
-          <li>Analyse requirements</li>
-          <li>Send analysed report to client</li>
-          <li>Consult</li>
-          <li><abbr title="Business Analysis">BA</abbr> documentation</li>
-        </ol>
-      </div>
-    </div>
-  </section>
   <hr>
-  <div class="d-flex align-items-center"> 
-    <div>
-      <figure>
-        <img src="/images/html5.png" alt="">
-        <figcaption>HTML 5</figcaption>
-      </figure>
-      <figure>
-        <img src="/images/css3.png" alt="">
-        <figcaption>CSS 3</figcaption>
-      </figure>
-      <figure>
-        <img src="/images/js.png" alt="">
-        <figcaption>JavaScript</figcaption>
-      </figure>
-    </div>
-    
-    <div>
-      <figure>
-        <img src="/images/bootstrap.png" alt="">
-        <figcaption>Bootstrap</figcaption>
-      </figure>
-      <figure>
-        <img src="/images/hugo-logo-wide.svg" alt="">
-        <figcaption title="The world’s fastest framework for building websites"><a href="https://gohugo.io/">Hugo</a>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-
-  <h2>Work Experience</h2>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Duration</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Jan 2012 to Apr 2014</td>
-        <td>HR Recruiter</td>
-      </tr>
-      <tr>
-        <td>June 2016 to Aug 2017</td>
-        <td>Freelance Web designer</td>
-      </tr>
-      <tr>
-        <td>Aug 2018 till date</td>
-        <td>Web developer at TenSketch</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr size="10">
-  <h2>Skills</h2>
-  <table cellspacing="10">
+  <!-- Intro -->
+  <table>
     <tr>
+      <td><img src="images/Balachandiran-photo.png" class="myphoto" alt="Balachandiran photo"></td>
       <td>
-        <table cellspacing="5">
-          <th>
-            <h4>Technical Skills</h4>
-          </th>
-          <tr>
-            <td>HTML 5</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>CSS 3</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>JS</td>
-            <td>⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Bootstrap</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Hugo</td>
-            <td>⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Visual Basic</td>
-            <td>⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table cellspacing="5">
-          <th colspan="2">
-            <h4>Business Skills</h4>
-          </th>
-          <tr>
-            <td>Business Analysis</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Consulting</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Content writing</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table cellspacing="5">
-          <th colspan="2">
-            <h4>Tools</h4>
-          </th>
-          <tr>
-            <td>Microsoft Word</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Microsoft Excel</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Visual Studio Code</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Gimp</td>
-            <td>⭐⭐</td>
-          </tr>
-        </table>
+        <h1 class="mobH1">Balachandiran.B.S</h1>
+        <p><em>Founder @ <a href="https://www.tensketch.com/"><strong>TenSketch.</strong></a></em>
+        </p>
+        <p>I sketch websites with minimalism and meaning.</p>
       </td>
     </tr>
   </table>
-  <hr>
-  <h2>Hobbies</h2>
-  <ul>
-    <li>Cooking</li>
-    <li>Reading</li>
-    <li>Writing</li>
-  </ul>
-  <hr>
-  <footer>
-
-    <a href="contact-me.html">Contact</a>
-    <h3>copyrights @ Balachandiran</h3>
+  <hr noshade>
+  <section id="roles">
+    <h2>My roles and responsibilities</h2>
+    <table id="roles">
+      <tr>
+        <td>
+          <img src="images/front-end_developer.jpg" title="front-end designer" alt="front-end_developer">
+          <h3>Front-end developer</h3>
+          <ol>
+            <li>Requirements analysis</li>
+            <li>Content writing</li>
+            <li>Wireframes and mockups</li>
+            <li>Design</li>
+            <li>Develop</li>
+          </ol>
+        </td>
+        <td>
+          <img src="images/business-analyst.jpg" title="business-analyst" alt="business-analyst">
+          <h3>Business analyst</h3>
+          <ol>
+            <li>Requirement gathering</li>
+            <li>Analyse requirements</li>
+            <li>Send analysed report to client</li>
+            <li>Consult</li>
+            <li><abbr title="Business Analysis">BA</abbr> documentation</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/content-writer.jpg" title="content-writer" alt="content-writer">
+          <h3>Content writer</h3>
+          <ul>
+            <li>Professional writing</li>
+            <li>Creative writing</li>
+            <li>SEO content writing</li>
+            <li>Social media content writing</li>
+            <li>Proofreading</li>
+          </ul>
+        </td>
+        <td>
+          <img src="images/online-training.jpg" title="online-training" alt="online-training">
+          <h3>Training and development</h3>
+          <ul>
+            <li>Front-end development training</li>
+            <li>Soft skills training</li>
+            <li class="linone"></li>
+            <li class="linone"></li>
+            <li class="linone"></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <hr noshade>
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Duration</th>
+            <th>Work</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jan 2012 to Apr 2014</td>
+            <td>HR Recruiter</td>
+          </tr>
+          <tr>
+            <td>June 2016 to Aug 2017</td>
+            <td>Freelance Web designer</td>
+          </tr>
+          <tr>
+            <td>Aug 2018 till date</td>
+            <td>Web developer at TenSketch</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <hr noshade>
+  <section id="skills">
+    <h2>Skills</h2>
+    <table id="tech">
+      <tr style="background-color: transparent;">
+        <th colspan="2">
+          <h4>Technical Skills</h4>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <img src="images/html5.png" alt="HTML 5 logo">
+            <figcaption>HTML 5</figcaption>
+          </figure>
+        </td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <img src="images/css3.png" alt="CSS 3 logo">
+            <figcaption>CSS 3</figcaption>
+          </figure>
+        </td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <img src="images/js.png" alt="JavaScript logo">
+            <figcaption>JavaScript</figcaption>
+          </figure>
+        </td>
+        <td>⭐⭐</td>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <img src="images/bootstrap.png" alt="bootstrap logo">
+            <figcaption>Bootstrap</figcaption>
+          </figure>
+        </td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <img src="images/hugo-logo-wide.svg" alt="Hugo logo">
+            <figcaption title="The world’s fastest framework for building websites"><a
+                href="https://gohugo.io/">Hugo</a>
+            </figcaption>
+          </figure>
+        </td>
+        <td>⭐⭐</td>
+      </tr>
+      <tr>
+        <td>
+          <figure>
+            <img src="images/VBA_LOGO-600w.png" alt="VBA logo">
+            <figcaption title="VBA for excel">Visual Basic
+            </figcaption>
+          </figure>
+        </td>
+        <td>⭐⭐</td>
+      </tr>
+    </table>
+    <div class="table">
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th colspan="2">
+                  <h4>Business Skills</h4>
+                </th>
+              </tr>
+              <tr>
+                <td>Business Analysis</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Consulting</td>
+                <td>⭐⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Content writing</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <th colspan="2">
+                  <h4>Tools</h4>
+                </th>
+              </tr>
+              <tr>
+                <td>Microsoft Word</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Microsoft Excel</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Visual Studio Code</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Gimp</td>
+                <td>⭐⭐</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h1>Portfolio</h1>
+    <a href="https://www.tensketch.com/web-solutions/website-designing-and-development/"
+      title="go to TenSketch's Website design page">
+      <figure>
+        <img src="images/prabhat-port.jpg" alt="prabhat-port pic">
+        <figcaption>Website designs</figcaption>
+      </figure>
+    </a>
+    <a href="https://www.tensketch.com/consulting/for-content-and-business/" title="go to TenSketch's consulting page">
+      <figure>
+        <img src="images/logo-sint.png" alt="sintab logo">
+        <figcaption>Consulting</figcaption>
+      </figure>
+    </a>
+    <a href="https://www.tensketch.com/content-writing-services/and-proofreading/"
+      title="go to TenSketch's content writing page">
+      <figure>
+        <img src="images/logo-inb.png" alt="INBGA logo">
+        <figcaption>Content writing</figcaption>
+      </figure>
+    </a>
+  </section>
+  <section id="products">
+  </section>
+  <hr noshade>
+  <footer id="contact">
+    <h2>Contact me</h2>
+    <table>
+      <tr>
+        <td>
+          <address>
+            <span>📌</span>&nbsp;Korattur, Chennai<br>TN, Pin: 600 101, India.<br><span>📧</span>&nbsp;<a
+              href="mailto:bala@tensketch.com">bala@tensketch.com</a><br><span>📱</span>&nbsp;<a
+              href="tel:919840166419">9840166419</a>
+          </address><br>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/balachandiran-tensketch/" title="Balachandiran LinkedIn page"><img
+                src="images/linkedin.png" alt="linkedIn logo"></a>
+            <a href="https://www.facebook.com/bala285TenSketch" title="Balachandiran Facebook page"><img
+                src="images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/tensketchwebdesigner/" title="TenSketch Instagram page"><img
+                src="images/instagram.png" alt="instagram logo"></a>
+            <a href="https://www.youtube.com/channel/UCa3k-JV9xA6ncMGKaZCyU-Q?view_as=subscriber"
+              title="TenSketch YouTube Channel"><img src="images/youtube.png" alt="YouTube logo"></a>
+            <a href="https://twitter.com/TenSketch285" title="TenSketch Twitter page"><img src="images/twitter.png"
+                alt="Twitter logo"></a>
+            <a href="https://website-designing-chennai-tensketch.blogspot.com/" title="TenSketch blog page"><img
+                src="images/blogger-icon.png" alt="Blogger logo"></a>
+          </div>
+        </td>
+        <td>
+          <form action="mailto:bala@tensketch.com" method="post" enctype="text/plain">
+            <input type="text" name="Name" placeholder="YourName" required><br><br>
+            <input type="email" name="Email" placeholder="abc@somemail.com" required><br><br>
+            <input type="tel" name="Mobile No." placeholder="10 digit mobile no." required><br><br>
+            <textarea name="Msg" cols="22" rows="6" placeholder="Your enquiry or message" required></textarea><br><br>
+            <input type="submit" value="SUBMIT">
+          </form>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <!-- credits and copyrights 'cc' -->
+    <div class="cc">
+      <div>
+        <h4 style="margin: 1px 0;">Credits</h4>
+        <ul>
+          <li>Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
+          <li>Images from <a href="https://www.pexels.com/" title="Pexels">https://www.pexels.com/</a></li>
+          <li><em>Special thanks to:</em>
+            <ul>
+              <li><a href="https://www.udemy.com/">https://www.udemy.com/</a>and
+                <a href="https://www.linkedin.com/in/angela-yu-963a584b/"><em>Angela Yu</em></a> for the tips
+                and tricks on front-end development.
+              </li>
+              <li>and to my Creative Director and sweet friend <a href="ncdesigns.studio"><em>Nithin Chandar</em></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <h3>copyrights @ Balachandiran, 2020.</h3>
+    </div>
   </footer>
 </body>
-
 </html>
