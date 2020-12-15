@@ -389,11 +389,12 @@
           </div>
         </td>
         <td>
-          <form action="mailto:bala@tensketch.com" method="post" enctype="text/plain">
+          <form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <input type="text" name="Name" placeholder="YourName" required><br><br>
             <input type="email" name="Email" placeholder="abc@somemail.com" required><br><br>
             <input type="tel" name="Mobile No." placeholder="10 digit mobile no." required><br><br>
             <textarea name="Msg" cols="22" rows="6" placeholder="Your enquiry or message" required></textarea><br><br>
+            <div data-netlify-recaptcha="true" class="recaptcha"></div>
             <input type="submit" value="SUBMIT">
           </form>
         </td>
